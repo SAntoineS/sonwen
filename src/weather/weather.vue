@@ -16,7 +16,7 @@
       <div class="flex flex-col items-center justify-center w-96 h-96" v-if="typeof weather.main != 'undefined'">
         <h1 class="text-4xl text-center">
           <vue-custom-tooltip v-if="isFav" label="Remove from favorite" position="is-bottom">
-            <font-awesome-icon class="text-xl mb-1" :icon="['fas', 'trash-alt']" @click="removeToFav(weather.name)"/>
+            <font-awesome-icon class="text-xl mb-1" :icon="['fas', 'trash-alt']" @click="removeFromFav(weather.name)"/>
           </vue-custom-tooltip>
           <vue-custom-tooltip v-if="!isFav" label="Add to favorite" position="is-bottom">
             <font-awesome-icon class="text-xl mb-1" :icon="['fas', 'heart']" @click="addToFav(weather.name)"/>
@@ -120,6 +120,18 @@ export default {
     addToFav(name) {
       this.favLocation.push(name);
       localStorage.favLocations = JSON.stringify(this.favLocation);
+      this.isFav = true;
+    },
+    removeFromFav(name){
+      const list = JSON.parse(localStorage.favLocations);
+
+      const index = list.indexOf(name);
+      if (index > -1) {
+        list.splice(index, 1);
+      }
+      localStorage.favLocations = JSON.stringify(list);
+      this.favLocation = JSON.parse(localStorage.favLocations);
+      this.weather = {};
     }
   }
 }
