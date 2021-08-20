@@ -3,7 +3,7 @@
     <div class="flex flex-col justify-center items-center h-1/3">
       <h1 class="text-7xl text-center">weather <span class="font-black">lab</span></h1>
       <div class="flex flex-col items-center h-32">
-        <input id="searchBar" type="text" placeholder="Search..."
+        <input id="searchBar" type="text" placeholder="Search city..."
                class="bg-transparent w-96 text-5xl mt-10 outline-none text-gray-500 text-center"
                spellcheck="false" v-model="query" @keypress="fetchWeather">
         <span class="text-sm text-red-600 uppercase" v-if="weather.cod === '404'">{{ weather.message }}</span>

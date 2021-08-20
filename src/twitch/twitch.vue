@@ -15,6 +15,9 @@
           <h1 class="text-5xl text-center cursor-pointer hover:text-gray-500"
               @click="nav('https://www.twitch.tv/sonwen ')">{{ userInfo.display_name }}</h1>
           <span class="text-xl text-center">{{ userInfo.email }}</span>
+          <div class="w-96 mt-5">
+            <span class="text-xl text-center">{{ userInfo.description }}</span>
+          </div>
           <vue-custom-tooltip v-if="!isFav" label="Logout" position="is-bottom">
             <font-awesome-icon class="text-7xl mt-5" :icon="['fas', 'sign-out-alt']" @click="logout()"/>
           </vue-custom-tooltip>
