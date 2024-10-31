@@ -4,6 +4,8 @@ import Link from 'next/link';
 import {ArrowUpRight} from 'lucide-react';
 import Image from "next/image";
 
+// eslint-disable-next-line @typescript-eslint/ban-ts-comment
+// @ts-expect-error
 export default function Project({project}) {
 
     return (
