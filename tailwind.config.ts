@@ -11,10 +11,10 @@ const config: Config = {
       center: true,
       padding: {
         DEFAULT: "2rem",  // Ajuste ici pour des espacements par défaut plus grands
-        sm: "10rem",
-        lg: "12rem",
-        xl: "14rem",
-        "2xl": "16rem",  // Pour les écrans très larges
+        sm: "4rem",
+        lg: "6rem",
+        xl: "8rem",
+        "2xl": "10rem",  // Pour les écrans très larges
       },
     },
     extend: {

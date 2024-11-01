@@ -1,0 +1,20 @@
+# robots.txt pour https://www.sonwen.ch/
+
+# Autoriser tous les robots d'exploration à accéder à tout le site
+User-agent: *
+Disallow:
+
+# Si tu souhaites bloquer des pages spécifiques, tu peux le faire comme ceci :
+# Disallow: /chemin/vers/une-page-a-bloquer
+# Disallow: /dossier-a-bloquer/
+
+# Exemple de pages spécifiques à bloquer
+# Disallow: /private/
+# Disallow: /temp/
+
+# Bloquer un robot spécifique
+# User-agent: BadBot
+# Disallow: /
+
+# Indiquer l'emplacement de ton sitemap (si tu en as un)
+Sitemap: https://www.sonwen.ch/sitemap.xml
