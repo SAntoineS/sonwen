@@ -1,6 +1,7 @@
 import type {Metadata} from "next";
 import "./ui/globals.css";
-import {inter} from "@/app/ui/fonts";
+import {manrope} from "@/app/ui/fonts";
+import Image from "next/image";
 
 export const metadata: Metadata = {
     title: "Sonwen",
@@ -24,13 +25,11 @@ export const metadata: Metadata = {
     },
 };
 
-export default function RootLayout({children}: { children: React.ReactNode; }) {
+export default function RootLayout({children}: { children: React.ReactNode }) {
     return (
         <html lang="en">
-        <body className={`${inter.className} antialiased bg-[#EFEFEF] text-lg`}>
-        <div className="container mx-auto pt-24"> {/* Ajoute un padding-top pour laisser de la place pour la navbar fixe */}
-            {children}
-        </div>
+        <body className={`${manrope.className} antialiased text-lg`}>
+        {children}
         </body>
         </html>
     );

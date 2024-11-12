@@ -10,11 +10,7 @@ const config: Config = {
     container: {
       center: true,
       padding: {
-        DEFAULT: "2rem",  // Ajuste ici pour des espacements par défaut plus grands
-        sm: "4rem",
-        lg: "6rem",
-        xl: "8rem",
-        "2xl": "10rem",  // Pour les écrans très larges
+        DEFAULT: "1rem",  // Ajuste ici pour des espacements par défaut plus grands
       },
     },
     extend: {
