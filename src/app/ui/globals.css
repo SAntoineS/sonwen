@@ -47,25 +47,38 @@ h3 {
     @apply text-[35px];
 }
 
-
 .link {
+    z-index: 99;
     position: relative;
+    clip-path: polygon(0 0, 100% 0, 100% 100%, 0% 100%);
+
+    &:before, &:after {
+        position: absolute;
+        content: '';
+        border-bottom: 1px solid black;
+        bottom: .1em;
+        transition: transform .5s cubic-bezier(0.075, 0.82, 0.165, 1);
+    }
+
+    &:before {
+        width: 1em;
+        transform-origin: left;
+    }
 
     &:after {
-        content: '';
-        position: absolute;
-        bottom: -.4em;
-        left: 50%;
-        right: 50%;
-        height: 2px;
-        background: currentColor;
-        transition: all ease .5s;
+        width: 82%;
+        left: 1em;
+        transform: translateX(110%);
+    }
+
+    &:hover:before {
+        transform: scaleX(0.3);
     }
 
     &:hover:after {
-        left: 0;
-        right: 0;
+        transform: translateX(0);
     }
+
 }
 
 .alignFull {
