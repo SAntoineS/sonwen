@@ -27,10 +27,10 @@ export default function HeroSection() {
                 snw.
             </Link>
             <div
-                className="absolute flex flex-col items-center justify-center left-4 gap-20 border border-red-500 h-1/2 text-[14px] select-none">
+                className="absolute flex flex-col items-center justify-center left-4 gap-20 h-1/2 text-[14px] select-none">
                 <Link className="-rotate-90 link" href="/">home</Link>
-                <Link className="-rotate-90 link" href="#about">about me</Link>
                 <Link className="-rotate-90 link" href="#projects">projects</Link>
+                <Link className="-rotate-90 link" href="#about">about me</Link>
                 <Link className="-rotate-90 link" href="#contact">contact</Link>
             </div>
             <div className="relative flex items-end">

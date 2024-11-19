@@ -1,5 +1,5 @@
 import Link from "next/link";
-import { Linkedin, Instagram, Github } from 'lucide-react';
+import { Linkedin, Instagram, Github, Mail } from 'lucide-react';
 
 export default function Contact() {
     return (
@@ -15,6 +15,9 @@ export default function Contact() {
                     </Link>
                     <Link href="https://github.com/SAntoineS" target="_blank">
                         <Github className="size-[25px] md:size-[35px]" />
+                    </Link>
+                    <Link href="mailto:antoine.sidot08@gmail.com" target="_blank">
+                        <Mail className="size-[25px] md:size-[35px]" />
                     </Link>
                 </div>
             </div>
