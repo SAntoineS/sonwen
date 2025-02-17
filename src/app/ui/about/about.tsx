@@ -6,7 +6,7 @@ import Link from "next/link";
 export default function About() {
     return (
         <main id="about" className="py-24 flex flex-col lg:flex-row items-center lg:items-start uppercase gap-10">
-            <div className="relative w-full lg:w-1/2 h-[50vh] md:h-[65vh] border rounded-[48px]">
+            <div className="relative w-full lg:w-1/2 h-[50vh] md:h-[75vh] border rounded-[48px]">
                 <Image
                     alt="Chœur"
                     className="rounded-[48px] object-cover"
