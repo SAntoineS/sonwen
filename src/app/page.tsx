@@ -8,15 +8,9 @@ export default function Home() {
     return (
         <main className="">
             <Navbar/>
-            <div className="h-[105vh]">
-                <HeroSection/>
-            </div>
-            <div className="h-[105vh]">
-                <About/>
-            </div>
-            <div className="h-[105vh]">
-                <Project/>
-            </div>
+            <HeroSection/>
+            <About/>
+            <Project/>
             <Footer/>
         </main>
     );

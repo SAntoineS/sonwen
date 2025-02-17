@@ -27,8 +27,8 @@ export const metadata: Metadata = {
 export default function RootLayout({children}: { children: React.ReactNode; }) {
     return (
         <html lang="en">
-        <body className={`${inter.className} antialiased bg-[#EFEFEF] text-lg`}>
-        <div className="container mx-auto pt-24"> {/* Ajoute un padding-top pour laisser de la place pour la navbar fixe */}
+        <body className={`${inter.className} antialiased bg-[#EFEFEF] text-lg m-0 p-0`}>
+        <div className="container mx-auto"> {/* Ajoute un padding-top pour laisser de la place pour la navbar fixe */}
             {children}
         </div>
         </body>

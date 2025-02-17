@@ -7,15 +7,15 @@
 }
 
 h1 {
-    @apply text-[150px] font-semibold leading-[128px] tracking-tighter;
+    @apply text-[64px] sm:text-[96px] md:text-[128px] lg:text-[150px] font-semibold leading-[46px] sm:leading-[69px] md:leading-[93px] lg:leading-[109px] tracking-tighter;
 }
 
 h2 {
-    @apply text-[64px] font-semibold leading-[128px] tracking-tighter;
+    @apply text-[32px] sm:text-[48px] md:text-[56px] lg:text-[64px] font-semibold leading-tight tracking-tighter;
 }
 
 h3 {
-    @apply text-[32px] font-semibold leading-[128px] tracking-tighter;
+    @apply text-[24px] sm:text-[28px] md:text-[32px] lg:text-[36px] font-semibold leading-tight tracking-tighter;
 }
 
 .link {
