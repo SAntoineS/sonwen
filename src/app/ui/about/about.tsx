@@ -1,6 +1,7 @@
 'use client'
 
 import Image from "next/image";
+import Link from "next/link";
 
 export default function About() {
     return (
@@ -17,11 +18,23 @@ export default function About() {
                 <h2>Few Words</h2>
                 <h3>About me</h3>
                 <p className="normal-case pb-5">
-                    An experienced front-end developer in JavaScript, VueJS, React and Angular, I&#39;ve worked on various projects ranging from SPA development to user experience optimization.
+                    An experienced front-end developer in JavaScript, VueJS, React, NextJS and Angular, I&#39;ve worked
+                    on various projects ranging from SPA development to user experience optimization.
                 </p>
-                <p className="normal-case pb-5">
-                    I hold a Certificat Fédéral de Capacité en Développement d&#39;Application (Federal Certificate of Competence in Application Development) and was recently certified in Angular and Scrum.
-                </p>
+                <div className="normal-case pb-5">
+                    I hold a Certificat Fédéral de Capacité en Développement d&#39;Application (Federal Certificate of
+                    Competence in Application Development) and was recently certified in <Link
+                    href="https://api.certificates.dev/certificates/55d07536-4cbe-45d9-901a-189247f84c36/download?signature=1a3bbd85726185d4daedb69e9f20ba51f3209fd9bb2046bc20c7a7c1b60e204c"
+                    target="_blank"
+                    className="link font-semibold">Angular</Link>, <Link
+                    href="https://www.udemy.com/certificate/UC-96a83779-19af-4ee5-a1bf-dee08b80aba7/" target="_blank"
+                    className="link font-semibold">Next</Link>, <Link
+                    href="https://www.awwwards.com/academy/certification/course/antoine-4/learn-figma-from-a-to-z"
+                    target="_blank"
+                    className="link font-semibold">Figma</Link> and <Link
+                    href="https://www.credly.com/badges/daf1cf0e-e05d-472a-8add-516d86758b99/public_url" target="_blank"
+                    className="link font-semibold">Scrum</Link>.
+                </div>
                 <p className="normal-case pb-5">
                     I enjoy working in a team, sharing my knowledge and contributing positively to innovative projects.
                 </p>

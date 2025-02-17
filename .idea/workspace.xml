@@ -4,8 +4,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="2d368289-9cac-4208-82a2-8a67bf96f3bb" name="Changes" comment="Fix leading H1">
-      <change beforePath="$PROJECT_DIR$/src/app/ui/heroSection/heroSection.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/ui/heroSection/heroSection.tsx" afterDir="false" />
+    <list default="true" id="2d368289-9cac-4208-82a2-8a67bf96f3bb" name="Changes" comment="Fix text-align">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/app/ui/about/about.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/ui/about/about.tsx" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -82,7 +83,7 @@
       <option name="presentableId" value="Default" />
       <updated>1738775608997</updated>
       <workItem from="1738775610315" duration="4398000" />
-      <workItem from="1739452745373" duration="18059000" />
+      <workItem from="1739452745373" duration="18787000" />
     </task>
     <task id="LOCAL-00001" summary="responsive">
       <option name="closed" value="true" />
@@ -100,7 +101,15 @@
       <option name="project" value="LOCAL" />
       <updated>1739812144475</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="Fix text-align">
+      <option name="closed" value="true" />
+      <created>1739812291461</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1739812291461</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -109,6 +118,7 @@
   <component name="VcsManagerConfiguration">
     <MESSAGE value="responsive" />
     <MESSAGE value="Fix leading H1" />
-    <option name="LAST_COMMIT_MESSAGE" value="Fix leading H1" />
+    <MESSAGE value="Fix text-align" />
+    <option name="LAST_COMMIT_MESSAGE" value="Fix text-align" />
   </component>
 </project>
