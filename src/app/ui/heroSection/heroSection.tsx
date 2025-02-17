@@ -8,7 +8,7 @@ export default function HeroSection() {
                 <h1>Frontend</h1>
                 <h1>Developer</h1>
                 <div className="flex justify-between items-start w-full md:w-1/2 uppercase font-semibold text-base pt-5 leading-4">
-                    <p>Currently crafting<br/> at (?)</p>
+                    <p className="text-center lg:text-start">Currently crafting<br/> at (?)</p>
                     <p>(2025 - present)</p>
                 </div>
             </div>
