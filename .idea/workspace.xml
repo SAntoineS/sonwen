@@ -4,21 +4,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="2d368289-9cac-4208-82a2-8a67bf96f3bb" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/sonwen.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/.gitignore" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/app/layout.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/layout.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/app/page.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/page.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/app/ui/about/about.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/ui/about/about.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/app/ui/footer/footer.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/ui/footer/footer.tsx" afterDir="false" />
+    <list default="true" id="2d368289-9cac-4208-82a2-8a67bf96f3bb" name="Changes" comment="responsive">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/app/ui/globals.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/ui/globals.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/app/ui/heroSection/heroSection.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/ui/heroSection/heroSection.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/app/ui/navbar/navbar.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/ui/navbar/navbar.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/app/ui/project/project.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/ui/project/project.tsx" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -95,11 +83,24 @@
       <option name="presentableId" value="Default" />
       <updated>1738775608997</updated>
       <workItem from="1738775610315" duration="4398000" />
-      <workItem from="1739452745373" duration="17597000" />
+      <workItem from="1739452745373" duration="17908000" />
     </task>
+    <task id="LOCAL-00001" summary="responsive">
+      <option name="closed" value="true" />
+      <created>1739811947680</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1739811947680</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="responsive" />
+    <option name="LAST_COMMIT_MESSAGE" value="responsive" />
   </component>
 </project>

@@ -7,7 +7,7 @@
 }
 
 h1 {
-    @apply text-[64px] sm:text-[96px] md:text-[128px] lg:text-[150px] font-semibold leading-[46px] sm:leading-[69px] md:leading-[93px] lg:leading-[109px] tracking-tighter;
+    @apply text-[64px] sm:text-[96px] md:text-[128px] lg:text-[150px] font-semibold leading-[56px] sm:leading-[79px] md:leading-[103px] lg:leading-[119px] tracking-tighter;
 }
 
 h2 {
