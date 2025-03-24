@@ -7,35 +7,36 @@
 }
 
 h1 {
-    @apply text-[64px] sm:text-[96px] md:text-[128px] lg:text-[150px] font-semibold leading-[56px] sm:leading-[79px] md:leading-[103px] lg:leading-[119px] tracking-tighter;
+    @apply text-5xl sm:text-6xl md:text-7xl lg:text-8xl font-semibold tracking-tighter;
 }
 
 h2 {
-    @apply text-[32px] sm:text-[48px] md:text-[56px] lg:text-[64px] font-semibold leading-tight tracking-tighter;
+    @apply text-4xl sm:text-5xl md:text-6xl font-semibold tracking-tighter;
 }
 
 h3 {
-    @apply text-[24px] sm:text-[28px] md:text-[32px] lg:text-[36px] font-semibold leading-tight tracking-tighter;
+    @apply text-2xl sm:text-3xl md:text-4xl font-semibold tracking-tighter;
+}
+
+.navBigLink:hover {
+    @apply bg-gradient-to-r from-[#a0a0a0] to-[#4b4b4b] text-transparent bg-clip-text
+}
+
+.coloredTitle {
+    @apply bg-gradient-to-r from-[#a0a0a0] to-[#4b4b4b] text-transparent bg-clip-text
 }
 
 .link {
-    position: relative;
+    @apply relative inline-flex items-center gap-2 text-inherit overflow-hidden;
+}
 
-    &:after {
-        content: '';
-        position: absolute;
-        bottom: -.4em;
-        left: 50%;
-        right: 50%;
-        height: 2px;
-        background: currentColor;
-        transition: all ease .5s;
-    }
+.link::after {
+    content: "";
+    @apply absolute left-0 bottom-0 w-full h-[1px] bg-current scale-x-0 origin-left transition-transform duration-300 ease-out;
+}
 
-    &:hover:after {
-        left: 0;
-        right: 0;
-    }
+.link:hover::after {
+    @apply scale-x-100;
 }
 
 .alignFull {

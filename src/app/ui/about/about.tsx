@@ -2,6 +2,7 @@
 
 import Image from "next/image";
 import Link from "next/link";
+import {Download} from 'lucide-react';
 
 export default function About() {
     return (
@@ -10,13 +11,12 @@ export default function About() {
                 <Image
                     alt="Chœur"
                     className="rounded-[48px] object-cover"
-                    src="/choeur.webp"
+                    src="/20230706_205423.jpg"
                     fill
                 />
             </div>
-            <div className="flex flex-col w-full lg:w-1/2 px-5 lg:pl-10 text-center lg:text-left gap-5">
-                <h2>Few Words</h2>
-                <h3>About me</h3>
+            <div className="flex flex-col w-full lg:w-1/2 px-5 lg:pl-10 gap-5">
+                <h2><span className="coloredTitle">Few Words</span> about me</h2>
                 <p className="normal-case pb-5">
                     An experienced front-end developer in JavaScript, VueJS, React, NextJS and Angular, I&#39;ve worked
                     on various projects ranging from SPA development to user experience optimization.
@@ -38,6 +38,7 @@ export default function About() {
                 <p className="normal-case pb-5">
                     I enjoy working in a team, sharing my knowledge and contributing positively to innovative projects.
                 </p>
+                    <a href="/front-end-developer.pdf" className="link w-fit" download>Download CV <Download size={28} strokeWidth={1}/></a>
             </div>
         </main>
     );

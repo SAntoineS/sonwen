@@ -2,17 +2,21 @@ import Link from "next/link";
 
 export default function Footer() {
     return (
-        <main className="h-52 flex flex-col md:flex-row bg-black text-white rounded-t-[48px] font-semibold">
-            <div className="flex flex-col items-center justify-center md:w-1/2 h-full gap-2">
-                <Link href="/" className="uppercase text-2xl md:text-3xl">swn.</Link>
-                <p className="text-[#999999] text-sm md:text-base">frontend developer</p>
-            </div>
-            <div className="flex flex-col items-center justify-center md:w-1/2 h-full gap-2">
-                <p className="text-2xl md:text-3xl uppercase">Socials</p>
-                <div className="flex items-center justify-center gap-5 text-[#999999] text-sm md:text-base flex-wrap">
-                    <Link href="https://www.linkedin.com/in/antoinesidot/" target="_blank" className="link">linkedin</Link>
-                    <Link href="https://github.com/SAntoineS" target="_blank" className="link">github</Link>
-                    <Link href="https://www.instagram.com/antoine.xrz/" target="_blank" className="link">instagram</Link>
+        <main id="contact" className="alignFull bg-[#0E1111] text-white py-24">
+            <div className="flex flex-col container gap-20">
+                <h1>Want to <br/> contact me ?</h1>
+                <div className="flex flex-col gap-10 md:gap-0 md:flex-row md:items-center justify-between">
+                    <Link href="mailto:hello@sonen.ch" className="link w-fit">hello@sonwen.ch</Link>
+                    <div className="flex items-center gap-3">
+                        <Link href="https://www.linkedin.com/in/antoinesidot/" target="_blank"
+                              className="link">LinkedIn</Link>
+                        <Link href="https://github.com/SAntoineS" target="_blank" className="link">GitHub</Link>
+                        <Link href="https://www.instagram.com/antoine.xrz/" target="_blank"
+                              className="link">Instagram</Link>
+                    </div>
+                </div>
+                <div className="flex items-center justify-center">
+                    <span>Made with love ❤️ by myself</span>
                 </div>
             </div>
         </main>
