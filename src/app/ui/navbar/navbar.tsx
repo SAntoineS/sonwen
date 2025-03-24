@@ -6,21 +6,13 @@ import {useEffect, useState, useRef} from "react";
 import clsx from "clsx";
 
 export default function Navbar() {
-    const [copied, setCopied] = useState(false);
     const [menuOpen, setMenuOpen] = useState(false);
-    const menuRef = useRef(null); // Référence pour le menu
-
-    const handleCopy = () => {
-        navigator.clipboard.writeText("hello@sonwen.ch").then(() => {
-            setCopied(true);
-            setTimeout(() => setCopied(false), 2500);
-        });
-    };
+    const menuRef = useRef<HTMLDivElement | null>(null);
 
     // Ferme le menu quand on clique en dehors
     useEffect(() => {
         function handleClickOutside(event: { target: any; }) {
-            if (menuRef.current && !menuRef.current.contains(event.target)) {
+            if (menuRef.current && !menuRef.current.contains(event.target as Node)) {
                 setMenuOpen(false);
             }
         }
@@ -55,22 +47,6 @@ export default function Navbar() {
                         "text-black": !menuOpen
                     }
                 )}>swn.</Link>
-
-                {/*<div
-                    className="z-30 hidden text-base relative md:flex items-center gap-2 bg-white px-5 py-2 rounded-full shadow cursor-pointer transition-all duration-300 ease-out hover:shadow-none"
-                    onClick={handleCopy}>
-                    <p>hello@sonwen.ch</p>
-                    <Copy color="#797979" size={18}/>
-
-                    <span
-                        className={clsx('absolute right-0 top-[120%] px-5 py-2 bg-black text-white rounded-full text-sm z-10 transition-all duration-300 ease-out',
-                            {
-                                'opacity-0': !copied,
-                                'opacity-100': copied,
-                            })}>
-                            Email Copié !
-                        </span>
-                </div>*/}
 
                 <button className="" onClick={() => setMenuOpen(!menuOpen)}>
                     <Menu size={28} strokeWidth={1}/>
